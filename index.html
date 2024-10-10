@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Weekly Earnings in Australia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="vega.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Average Weekly Earnings in Australia</h1>
+</header>
+
+<main>
+    <!-- Introduction Section -->
+    <section>
+        <h2>Introduction</h2>
+        <p>Understanding wage patterns is crucial for anyone entering the job market or considering a career switch. In Australia, weekly earnings can vary significantly based on factors such as industry and gender. By examining key data, we can gain insight into these wage disparities, helping individuals make more informed decisions about their career paths. This analysis aims to shed light on how average weekly earnings differ between males and females across industries and over time. For job seekers and career planners, such data provides valuable context about the Australian job market, helping them identify industries with better pay and assess gender wage gaps.</p>
+    </section>
+
+    <!-- First Chart: Earnings by Industry -->
+    <section>
+        <h2>Average Weekly Earnings by Industry</h2>
+        <div id="earnings-chart"></div>
+        <p>The first chart displays the average weekly earnings of full-time adults across various industries, with a comparison between males and females. It reveals several important trends:</p>
+        <ul>
+            <li><strong>Mining</strong> is the highest-paying industry for both males and females, with males earning significantly more than females, showcasing a noticeable gender pay gap.</li>
+            <li>Industries like <strong>Information Media & Telecommunications</strong>, <strong>Financial & Insurance Services</strong>, and <strong>Professional, Scientific & Technical Services</strong> also rank high in terms of earnings for both genders. However, a closer look reveals that males consistently earn more than females in these fields.</li>
+            <li>On the lower end of the spectrum, industries such as <strong>Accommodation & Food Services</strong> and <strong>Retail Trade</strong> have the lowest weekly earnings, but the gender pay gap in these sectors appears to be less pronounced.</li>
+            <li>Overall, males tend to earn more than females in almost every industry, though the magnitude of the gap varies significantly depending on the sector.</li>
+        </ul>
+    </section>
+
+    <!-- Second Chart: Earnings Over Time -->
+    <section>
+        <h2>Average Weekly Earnings Over Time by Gender</h2>
+        <div id="line-chart"></div>
+        <p>The second chart tracks the evolution of average weekly cash earnings for full-time males and females over several years. Key takeaways include:</p>
+        <ul>
+            <li>Both males and females have experienced a general upward trend in earnings over time, reflecting overall wage growth in the Australian economy.</li>
+            <li>While both genders follow a similar trend, the gap between male and female earnings remains consistent, with females generally earning less than males during the same periods.</li>
+            <li>There are visible fluctuations around certain periods, particularly where male earnings drop or rise sharply, potentially due to economic events or industry-specific factors.</li>
+            <li>In the most recent periods, both male and female earnings show an upward trend, but the gap between them persists.</li>
+        </ul>
+    </section>
+
+    <!-- Second Chart: Earnings Over Time -->
+    </section>
+        <!-- Choropleth Map -->
+        <h2>Average weekly ordinary time earnings, full-time adults by state</h2>
+        <div id="map-container"></div>
+    </section>
+
+</main>
+
+</body>
+</html>
+
+
+
