@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
                "y": {
                    "field": "value",  // Earnings data on the y-axis
                    "type": "quantitative",
-                   "axis": {"title": "Earnings ($)"}
+                   "axis": {"title": "Earnings (AUD)"}
                },
                "color": {
                    "field": "Gender",  // Color by gender
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
                    {
                        "field": "value", 
                        "type": "quantitative", 
-                       "title": "Earnings ($)",
+                       "title": "Earnings (AUD)",
                        "format": "$,.2f"  // Add dollar sign and format to 2 decimal places
                    }
                ]
@@ -184,19 +184,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 "data": {
                     "url": "australian-states.min.geojson",
                     "format": {
-                        "type": "json",  // Use "json" if Vega does not recognize "geojson"
-                        "property": "features"  // Explicitly access the features in the GeoJSON
+                        "type": "json",  
+                        "property": "features"  
                     }
                 },
                 "transform": [
                     {
-                        "lookup": "properties.STATE_NAME",  // Ensure STATE_NAME is correct in GeoJSON
+                        "lookup": "properties.STATE_NAME",  
                         "from": {
                             "data": {
                                 "values": parsedData
                             },
-                            "key": "State",  // Ensure CSV state names match this key
-                            "fields": ["Average Income"]  // Field to map from CSV
+                            "key": "State",  
+                            "fields": ["Average Income"]  
                         }
                     }
                 ],
